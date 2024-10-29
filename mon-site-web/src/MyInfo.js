@@ -17,10 +17,10 @@ function MyInfo() {
                 />
             </div>
             <div className="info-details">
-                <h2 className="info-name">Full Name: John Doe</h2><br />
-                <p className="info-username">Username: johndoe</p><br />
-                <p className="info-email">Email: john.doe@example.com</p><br />
-                <p className="info-number">Phone Number: +1 (123) 456-7890</p><br />
+                <h2 className="info-name">Full Name: Houmani Fahd</h2><br />
+                <p className="info-username">Username: f87shujin</p><br />
+                <p className="info-email">Email: houmanifahd87@gmail.com</p><br />
+                <p className="info-number">Phone Number: +1 (438) 365-2608</p><br />
                 
             </div>
         </div>
