@@ -1,5 +1,5 @@
 
-import './App.css';
+import '../CSS/App.css';
 import Header  from './header.js';
 import MyInfo from './MyInfo.js';
 import MySkills from './MySkills.js';

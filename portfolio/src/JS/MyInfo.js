@@ -1,5 +1,5 @@
 import React from "react";
-import './MyInfo.css'; // Import the CSS for styling and animations
+import '../CSS/MyInfo.css'; // Import the CSS for styling and animations
 
 function MyInfo() {
     return (
