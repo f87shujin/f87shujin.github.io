@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Layout</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .image {
+            flex: 1;
+            padding: 20px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://via.placeholder.com/400x300" alt="Placeholder Image">
+        </div>
+        <div class="text">
+            <h1>Welcome to Our Page</h1>
+            <p>This is an example of a layout with an image on the left and text on the right. You can replace this text with your own content, and the image with your desired image.</p>
+            <p>The layout uses flexbox to create a responsive design that works well on various screen sizes.</p>
+        </div>
+    </div>
+</body>
+</html>
