@@ -1,11 +1,22 @@
 @import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
+.projects-container{
+  display: table-column;
+  width: 100%;
+ 
+}
+
 .project-section {
   display: flex;
   background-color: #33085c;
-  border-radius: 15px;
+  border-radius: 40px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  height: 200px;
+  width: 97%;
+  margin: 25px;
+  
+  
 }
 
 .project-section:hover {
@@ -14,13 +25,15 @@
 }
 
 .project-image {
-  flex: 1;
+  padding: 15px;
+  flex:1;
   max-width: 40%;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
+  border-radius: 80px;
   object-fit: cover;
 }
 
