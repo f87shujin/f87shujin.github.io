@@ -1,0 +1,52 @@
+.dreams-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dreams-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .dreams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .dream-section {
+    background-color: #127bc1;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dream-image img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .dream-content {
+    margin-top: 10px;
+  }
+  
+  .dream-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .dream-link {
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .dream-link:hover {
+    color: #0073e6;
+  }
+  

@@ -4,6 +4,7 @@ import Header  from './header.js';
 import MyInfo from './MyInfo.js';
 import MySkills from './MySkills.js';
 import Projects from './Projects.js';
+import Dream from './Dream.js';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <MyInfo />
         <MySkills />
         <Projects />
+        <Dream />
       </header>
     </div>
   );
