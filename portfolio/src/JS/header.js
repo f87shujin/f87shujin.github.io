@@ -11,7 +11,7 @@ function Header() {
         <i className="devicon-javascript-plain" title="JavaScript"></i>
         <i className="devicon-html5-plain" title="HTML5"></i>
         <i className="devicon-java-plain" title="Java"></i>
-        <h1>Bienvenue sur mon Portfolio !</h1>
+        <h1>Bienvenue sur mon Portfolio !(WIP :) )</h1>
         <i className="devicon-mysql-plain" title="SQL"></i>
         <i className="devicon-php-plain" title="PHP"></i>
         <i className="devicon-csharp-plain" title="C#"></i>
