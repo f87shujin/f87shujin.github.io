@@ -1,11 +1,14 @@
 .dreams-container {
     padding: 20px;
     text-align: center;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
   }
   
   .dreams-heading {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #e0e0e0;
   }
   
   .dreams-grid {
@@ -15,12 +18,12 @@
   }
   
   .dream-section {
-    background-color: #127bc1;
+    background-color: #404040;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
     margin-bottom: 30px;
   }
@@ -38,15 +41,16 @@
   .dream-title {
     font-size: 1.2em;
     margin: 10px 0;
+    color: #e0e0e0;
   }
   
   .dream-link {
-    color: #333;
+    color: #c0c0c0;
     font-size: 1.5em;
     text-decoration: none;
   }
   
   .dream-link:hover {
-    color: #0073e6;
+    color: #e0e0e0;
   }
   

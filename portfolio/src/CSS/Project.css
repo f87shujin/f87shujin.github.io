@@ -2,15 +2,16 @@
 .projects-container{
   display: table-column;
   width: 100%;
- 
+  background-color: #2a2a2a;
+  color: #e0e0e0;
 }
 
 .project-section {
   display: flex;
-  background-color: #33085c;
+  background-color: #404040;
   border-radius: 40px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   height: 200px;
   width: 97%;
@@ -21,7 +22,7 @@
 
 .project-section:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {
@@ -48,7 +49,7 @@
 
 .project-title {
   font-size: 2.5rem;
-  color: #548c99;
+  color: #c0c0c0;
   margin: 0;
 }
 
@@ -57,10 +58,10 @@
   top: 20px;
   right: 20px;
   font-size: 1.5rem;
-  color: #007bff;
+  color: #b8b8b8;
   transition: color 0.3s ease;
 }
 
 .project-link:hover {
-  color: #0056b3;
+  color: #e0e0e0;
 }

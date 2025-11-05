@@ -11,7 +11,7 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right bottom, #00436a, #3b3b3b);
+    background: linear-gradient(to right bottom, #3a3a3a, #2a2a2a);
     padding: 20px;
     padding-left: 80px;
     box-sizing: border-box;
@@ -81,6 +81,7 @@
     font-size: 1.5em;
     margin: 10px 0;
     opacity: 0.8;
+    color: #e0e0e0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 

@@ -3,8 +3,8 @@
 
 .header {
   width: 100%;
-  background: linear-gradient(to right, #6a0000, #00004c);
-  color: #ffffff; /* Light text for contrast */
+  background: linear-gradient(to right, #404040, #2a2a2a);
+  color: #e0e0e0; /* Light text for contrast */
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
@@ -23,10 +23,10 @@
 
 .logo-container i {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #e0e0e0;
   transition: color 0.3s ease;
 }
 
 .logo-container i:hover {
-  color: #61dafb; /* Light blue color on hover, you can change this */
+  color: #c0c0c0; /* Lighter gray on hover */
 }
