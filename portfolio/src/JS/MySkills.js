@@ -44,6 +44,9 @@ function MySkills() {
 
   return (
     <div className="skills-container">
+      <h1 className="skills-heading">Technical Skills</h1>
+      <p className="skills-subtitle">Technologies and tools I work with</p>
+      
       <div className="skills-grid top-row">
         {renderSkillIcons(topRowSkills)}
       </div>
@@ -53,12 +56,11 @@ function MySkills() {
       <div className="skill-details">
         {activeSkill ? (
           <>
-            <h3>{activeSkill.text}</h3>
-            <p>{activeSkill.category}</p>
-            {/* Add more details about the skill here */}
+            <h3 className="skill-details-title">{activeSkill.text}</h3>
+            <p className="skill-details-text">{activeSkill.category}</p>
           </>
         ) : (
-          <p>Click on a skill to see more details</p>
+          <p className="skill-details-prompt">👆 Click on a skill to learn more about my expertise</p>
         )}
       </div>
     </div>

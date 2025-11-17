@@ -1,12 +1,13 @@
 import React from "react";
 import '../CSS/MyInfo.css'; // Import the CSS for styling and animations
+import profileImage from '../images/ME.png'; // Import the profile image
 
 function MyInfo() {
     return (
         <div className="info-container">
             <div className="image-container">
                 <img 
-                    src="https://i.pinimg.com/564x/57/8b/8e/578b8e3579215c2fa19b87548fec5cee.jpg" 
+                    src={profileImage} 
                     alt="Profile" 
                     className="profile-image" 
                 />
@@ -22,6 +23,15 @@ function MyInfo() {
                 <p className="info-email">Email: houmanifahd87@gmail.com</p><br />
                 <p className="info-number">Phone Number: +1 (438) 365-2608</p><br />
                 
+                <div className="info-description">
+                    <h3 className="description-title">About Me</h3>
+                    <p className="description-text">
+                        I'm Fahd, a 21-year-old developer with a passion for programming and problem-solving. 
+                        Throughout my journey, I've explored multiple programming languages and found a particular 
+                        affinity for Python due to its versatility and powerful capabilities. I'm constantly working 
+                        on new projects to sharpen my skills, embrace challenges, and most importantly—have fun while coding.
+                    </p>
+                </div>
             </div>
         </div>
     );
