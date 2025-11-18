@@ -152,6 +152,26 @@
   margin: 0;
 }
 
+.view-details-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: rgba(184, 184, 184, 0.15);
+  color: #e0e0e0;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #555;
+  transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: rgba(184, 184, 184, 0.25);
+  border-color: #777;
+  transform: translateX(5px);
+}
+
 .project-link {
   position: absolute;
   top: 30px;

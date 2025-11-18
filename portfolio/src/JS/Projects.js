@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS/Project.css';
 
 
@@ -6,11 +7,12 @@ function Projects() {
     const projectsData = [
         {
             id: 1,
-            title: "OpenCV Computer Vision",
-            description: "Advanced image processing and object detection using OpenCV and Python",
-            image: "https://repository-images.githubusercontent.com/624589634/1b51aa7b-c125-4fda-9340-b2edcb9cb48a",
-            link: "https://github.com/f87shujin",
-            tech: ["Python", "OpenCV", "AI"]
+            title: "eLibrary",
+            description: "A dynamic online bookstore platform where users can browse, search, and purchase books with an intuitive interface",
+            image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800",
+            link: "https://github.com/f87shujin/eLibrary",
+            detailsLink: "/project/elibrary",
+            tech: ["PHP", "JavaScript", "HTML", "CSS"]
         },
         {
             id: 2,
@@ -60,6 +62,11 @@ function Projects() {
                             <div className="project-info">
                                 <h2 className="project-title">{project.title}</h2>
                                 <p className="project-description">{project.description}</p>
+                                {project.detailsLink && (
+                                    <Link to={project.detailsLink} className="view-details-btn">
+                                        View Details →
+                                    </Link>
+                                )}
                             </div>
                             <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit project">
                                 <i className="fa fa-external-link" aria-hidden="true"></i>
