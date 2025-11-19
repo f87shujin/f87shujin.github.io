@@ -125,6 +125,40 @@ function ProjectDetails() {
             demo: null,
             date: "2024",
             role: "AI/ML Developer & Full-Stack Developer"
+        },
+        'mitray-bot': {
+            title: "Mitray - Multi-Purpose Discord Bot",
+            tagline: "Feature-rich Discord bot with music streaming, AI chat, and entertainment",
+            description: "Mitray is a versatile Discord bot built with Python that brings entertainment and functionality to Discord servers. Stream music from YouTube and Spotify, interact with an AI chatbot, fetch GIFs and images, and enjoy mini-games like Russian Roulette - all in one bot.",
+            technologies: ["Python", "Discord.py", "YouTube API", "Spotify API", "AI/Chatbot", "Async Programming"],
+            features: [
+                "Music streaming from YouTube with queue management",
+                "Spotify integration for seamless music playback",
+                "AI-powered chatbot for natural conversations",
+                "GIF and image fetcher for quick media sharing",
+                "Mini-games including Russian Roulette for server entertainment",
+                "Asynchronous command handling for smooth performance",
+                "User-friendly commands with intuitive syntax",
+                "Multi-server support with individual configurations"
+            ],
+            challenges: [
+                {
+                    title: "Audio Streaming Architecture",
+                    description: "Implemented robust audio streaming from both YouTube and Spotify APIs, handling queue management, playback controls, and ensuring smooth audio delivery across multiple servers."
+                },
+                {
+                    title: "API Rate Limiting",
+                    description: "Designed efficient caching and request management systems to handle YouTube and Spotify API rate limits while maintaining responsive bot performance."
+                },
+                {
+                    title: "Asynchronous Operations",
+                    description: "Leveraged Python's asyncio and Discord.py's asynchronous features to handle multiple concurrent commands and audio streams without blocking or lag."
+                }
+            ],
+            github: "https://github.com/f87shujin/Mitray",
+            demo: null,
+            date: "2024",
+            role: "Bot Developer & Backend Engineer"
         }
     };
 

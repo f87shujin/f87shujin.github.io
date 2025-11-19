@@ -34,11 +34,12 @@ function Projects() {
         },
         {
             id: 4,
-            title: "Automation Scripts",
-            description: "Collection of productivity-enhancing automation scripts",
-            image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
-            link: "https://github.com/f87shujin",
-            tech: ["Python", "Automation", "Scripts"]
+            title: "Mitray Discord Bot",
+            description: "Multi-purpose Discord bot with music streaming, AI chat, and mini-games",
+            image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800",
+            link: "https://github.com/f87shujin/Mitray",
+            detailsLink: "/project/mitray-bot",
+            tech: ["Python", "Discord.py", "YouTube API", "Spotify"]
         }
     ];
 
