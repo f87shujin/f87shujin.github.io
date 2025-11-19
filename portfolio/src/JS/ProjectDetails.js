@@ -54,9 +54,77 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/f87shujin/eLibrary",
-            demo: null, // Add demo link if available
+            demo: null,
             date: "2024",
             role: "Full-Stack Developer"
+        },
+        'portfolio': {
+            title: "Personal Portfolio Website",
+            tagline: "A modern, responsive portfolio showcasing my projects and skills",
+            description: "A dynamic single-page application built with React that showcases my professional work, technical skills, and career aspirations. Features a dark theme design with smooth animations, interactive components, and detailed project pages powered by React Router.",
+            technologies: ["React", "JavaScript", "HTML5", "CSS3", "React Router", "GitHub Pages"],
+            features: [
+                "Modern dark theme with professional color scheme",
+                "Fully responsive design optimized for all devices",
+                "Interactive skills section with technology icons",
+                "Dynamic project showcase with detail pages",
+                "Smooth scrolling and CSS transitions",
+                "Custom styled components and animations",
+                "SEO-optimized with meta tags and descriptions",
+                "Deployed on GitHub Pages with automated CI/CD"
+            ],
+            challenges: [
+                {
+                    title: "React Router Integration",
+                    description: "Implemented HashRouter to enable client-side routing on GitHub Pages while maintaining clean URLs and proper navigation."
+                },
+                {
+                    title: "CSS Architecture",
+                    description: "Designed a modular CSS system with separate stylesheets for each component, ensuring maintainability and consistent theming across all pages."
+                },
+                {
+                    title: "Performance Optimization",
+                    description: "Optimized component rendering and implemented code splitting to ensure fast load times and smooth user experience."
+                }
+            ],
+            github: "https://github.com/f87shujin/f87shujin.github.io",
+            demo: "https://f87shujin.github.io",
+            date: "2025",
+            role: "Front-End Developer & Designer"
+        },
+        'intelligent-recipes': {
+            title: "Intelligent Recipes - AI-Powered Recipe Assistant",
+            tagline: "Smart recipe management with AI-driven ingredient recognition and suggestions",
+            description: "An intelligent recipe application that leverages AI and computer vision to revolutionize cooking. Using YOLOv8 for ingredient detection and AI language models for recipe generation, this app helps users discover recipes based on available ingredients and manage their recipe collection effortlessly.",
+            technologies: ["Python", "Flask", "YOLOv8", "AI/ML", "HTML5", "CSS3", "Computer Vision", "Ollama"],
+            features: [
+                "AI-powered recipe creation - Input recipe name and AI automatically gathers data and adds to database",
+                "Ingredient recognition - Upload image or provide text list of ingredients to get matching recipes",
+                "Smart recipe suggestions based on available ingredients",
+                "Interactive AI chef chatbot for cooking questions and guidance",
+                "Recipe database management with review and edit capabilities",
+                "Computer vision integration using YOLOv8 for ingredient detection",
+                "Natural language processing for recipe generation",
+                "User-friendly interface for browsing and managing recipes"
+            ],
+            challenges: [
+                {
+                    title: "AI Model Integration",
+                    description: "Successfully integrated YOLOv8 for ingredient recognition and custom AI models for recipe generation, ensuring accurate detection and relevant recipe suggestions."
+                },
+                {
+                    title: "Real-time Image Processing",
+                    description: "Optimized the image processing pipeline to handle ingredient detection in real-time while maintaining accuracy and performance."
+                },
+                {
+                    title: "Conversational AI Implementation",
+                    description: "Developed a chef-persona chatbot using Ollama that provides contextually relevant cooking advice and responds naturally to user queries."
+                }
+            ],
+            github: "https://github.com/f87shujin/AI-Desert",
+            demo: null,
+            date: "2024",
+            role: "AI/ML Developer & Full-Stack Developer"
         }
     };
 
@@ -75,26 +143,27 @@ function ProjectDetails() {
 
     return (
         <div className="project-details-container">
-            <Link to="/" className="back-button">← Back to Portfolio</Link>
-            
-            <header className="project-header">
-                <h1 className="project-title">{project.title}</h1>
-                <p className="project-tagline">{project.tagline}</p>
-                <div className="project-meta">
-                    <span className="meta-item">📅 {project.date}</span>
-                    <span className="meta-item">👤 {project.role}</span>
-                </div>
-                <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="link-button github-button">
-                        <i className="devicon-github-original"></i> View on GitHub
-                    </a>
-                    {project.demo && (
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="link-button demo-button">
-                            🚀 Live Demo
+            <div className="details-wrapper">
+                <Link to="/" className="back-button">← Back to Portfolio</Link>
+                
+                <header className="project-header">
+                    <h1 className="project-title">{project.title}</h1>
+                    <p className="project-tagline">{project.tagline}</p>
+                    <div className="project-meta">
+                        <span className="meta-item">📅 {project.date}</span>
+                        <span className="meta-item">👤 {project.role}</span>
+                    </div>
+                    <div className="project-links">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="link-button github-button">
+                            <i className="devicon-github-original"></i> View on GitHub
                         </a>
-                    )}
-                </div>
-            </header>
+                        {project.demo && (
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="link-button demo-button">
+                                🚀 Live Demo
+                            </a>
+                        )}
+                    </div>
+                </header>
 
             <section className="project-section">
                 <h2 className="section-title">Overview</h2>
@@ -123,18 +192,6 @@ function ProjectDetails() {
             </section>
 
             <section className="project-section">
-                <h2 className="section-title">Screenshots</h2>
-                <div className="screenshots-grid">
-                    {project.screenshots.map((screenshot, index) => (
-                        <div key={index} className="screenshot-item">
-                            <img src={screenshot.url} alt={screenshot.caption} />
-                            <p className="screenshot-caption">{screenshot.caption}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            <section className="project-section">
                 <h2 className="section-title">Challenges & Solutions</h2>
                 <div className="challenges-list">
                     {project.challenges.map((challenge, index) => (
@@ -149,6 +206,7 @@ function ProjectDetails() {
             <footer className="project-footer">
                 <Link to="/" className="back-button-large">← Back to All Projects</Link>
             </footer>
+            </div>
         </div>
     );
 }

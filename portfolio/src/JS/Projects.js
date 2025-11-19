@@ -20,15 +20,17 @@ function Projects() {
             description: "Modern responsive portfolio website built with React",
             image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
             link: "https://f87shujin.github.io",
+            detailsLink: "/project/portfolio",
             tech: ["React", "JavaScript", "CSS"]
         },
         {
             id: 3,
-            title: "Data Analysis Tool",
-            description: "Python-based data visualization and analysis application",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
-            link: "https://github.com/f87shujin",
-            tech: ["Python", "Pandas", "Matplotlib"]
+            title: "Intelligent Recipes",
+            description: "AI-powered recipe assistant with ingredient recognition and smart suggestions",
+            image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800",
+            link: "https://github.com/f87shujin/AI-Desert",
+            detailsLink: "/project/intelligent-recipes",
+            tech: ["Python", "YOLOv8", "AI/ML", "Flask"]
         },
         {
             id: 4,

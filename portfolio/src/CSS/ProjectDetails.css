@@ -1,10 +1,23 @@
 @import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
 
+* {
+    box-sizing: border-box;
+}
+
 .project-details-container {
     background-color: #2a2a2a;
     color: #e0e0e0;
     min-height: 100vh;
     padding: 40px 20px;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+
+.details-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .back-button {
@@ -12,8 +25,8 @@
     color: #b8b8b8;
     text-decoration: none;
     font-size: 1.1rem;
-    margin-bottom: 30px;
-    padding: 10px 20px;
+    margin: 0 0 30px 0;
+    padding: 12px 24px;
     border-radius: 8px;
     background-color: rgba(64, 64, 64, 0.5);
     transition: all 0.3s ease;
@@ -29,20 +42,24 @@
     max-width: 1200px;
     margin: 0 auto 60px;
     text-align: center;
+    padding: 0 20px;
 }
 
 .project-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #e0e0e0;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-right: 25px;
     font-weight: 700;
+    line-height: 1.3;
 }
 
 .project-tagline {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #b8b8b8;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-style: italic;
+    line-height: 1.5;
 }
 
 .project-meta {
@@ -107,17 +124,18 @@
 
 .project-section {
     max-width: 1200px;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
     padding: 30px;
     background: linear-gradient(135deg, rgba(64, 64, 64, 0.4) 0%, rgba(48, 48, 48, 0.4) 100%);
     border-radius: 15px;
     border-left: 4px solid #b8b8b8;
+    box-sizing: border-box;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #e0e0e0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 600;
 }
 
@@ -175,8 +193,9 @@
 
 .screenshots-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
 }
 
 .screenshot-item {
@@ -185,6 +204,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    width: 100%;
 }
 
 .screenshot-item:hover {
@@ -198,6 +218,8 @@
     height: auto;
     display: block;
     transition: transform 0.3s ease;
+    object-fit: cover;
+    max-height: 400px;
 }
 
 .screenshot-item:hover img {
@@ -275,17 +297,30 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .project-details-container {
+        padding: 20px 15px;
+    }
+    
+    .project-header {
+        padding: 0 10px;
+    }
+    
     .project-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .project-tagline {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .project-meta {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+    }
+    
+    .project-section {
+        padding: 20px 15px;
+        margin-bottom: 30px;
     }
     
     .screenshots-grid {
@@ -294,5 +329,10 @@
     
     .section-title {
         font-size: 1.5rem;
+    }
+    
+    .link-button {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 }

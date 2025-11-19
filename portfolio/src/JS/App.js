@@ -11,7 +11,7 @@ import ProjectDetails from './ProjectDetails.js';
 
 function HomePage() {
   return (
-    <>
+    <div className="App-header homepage">
       <Header />
       <section id="info">
         <MyInfo />
@@ -26,19 +26,17 @@ function HomePage() {
         <Dream />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/project/:projectId" element={<ProjectDetails />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project/:projectId" element={<ProjectDetails />} />
+      </Routes>
     </div>
   );
 }
