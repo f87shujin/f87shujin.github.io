@@ -21,7 +21,7 @@ function Projects() {
             image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
             link: "https://f87shujin.github.io",
             detailsLink: "/project/portfolio",
-            tech: ["React", "JavaScript", "CSS"]
+            tech: ["React", "JavaScript", "CSS", "HTML"]
         },
         {
             id: 3,
@@ -36,7 +36,7 @@ function Projects() {
             id: 4,
             title: "Mitray Discord Bot",
             description: "Multi-purpose Discord bot with music streaming, AI chat, and mini-games",
-            image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800",
+            image: "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png",
             link: "https://github.com/f87shujin/Mitray",
             detailsLink: "/project/mitray-bot",
             tech: ["Python", "Discord.py", "YouTube API", "Spotify"]
