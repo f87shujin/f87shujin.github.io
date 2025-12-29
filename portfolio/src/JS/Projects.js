@@ -17,7 +17,7 @@ function Projects() {
         {
             id: 2,
             title: "Web Portfolio",
-            description: "Modern responsive portfolio website built with React",
+            description: "Modern responsive portfolio website built with React showcasing my projects, skills, and professional journey with a sleek dark-themed design",
             image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
             link: "https://f87shujin.github.io",
             detailsLink: "/project/portfolio",
@@ -27,7 +27,7 @@ function Projects() {
             id: 3,
             title: "Intelligent Recipes",
             description: "AI-powered recipe assistant with ingredient recognition and smart suggestions",
-            image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800",
+            image: "https://indatalabs.com/wp-content/uploads/2024/01/ai-app.webp",
             link: "https://github.com/f87shujin/AI-Desert",
             detailsLink: "/project/intelligent-recipes",
             tech: ["Python", "YOLOv8", "AI/ML", "Flask"]
@@ -36,10 +36,28 @@ function Projects() {
             id: 4,
             title: "Mitray Discord Bot",
             description: "Multi-purpose Discord bot with music streaming, AI chat, and mini-games",
-            image: "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png",
+            image: "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2021/07/Discord-Logo-Lede.png",
             link: "https://github.com/f87shujin/Mitray",
             detailsLink: "/project/mitray-bot",
             tech: ["Python", "Discord.py", "YouTube API", "Spotify"]
+        },
+        {
+            id: 5,
+            title: "Solid Snake - DQN AI Training",
+            description: "Deep Q-Network reinforcement learning project training 250 snakes simultaneously with GPU acceleration and real-time web dashboard",
+            image: "https://www.coolmathgames.com/sites/default/files/Snake_OG-logo.jpg",
+            link: "https://github.com/f87shujin/Solid-snake",
+            detailsLink: "/project/solid-snake",
+            tech: ["Python", "PyTorch", "Pygame", "Flask", "DirectML"]
+        },
+        {
+            id: 6,
+            title: "Elixir Fountain E-commerce",
+            description: "Full-stack e-commerce platform with React frontend and Flask backend featuring product management, shopping cart, and secure checkout",
+            image: "https://www.marykay.ca/-/media/images/mk/united-states/canada/esuite/product-shop-landing/shop/category-fragrance-hero-2.png?h=521&w=1418&la=en-CA&hash=78AF8FFDAE893DAD7E80979F5B62AC2A9ECC1EE7",
+            link: "https://github.com/Madeinbasement/Ecomerce-pro",
+            detailsLink: "/project/elixir-fountain",
+            tech: ["React", "Flask", "MongoDB", "Python"]
         }
     ];
 

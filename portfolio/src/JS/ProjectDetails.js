@@ -159,6 +159,78 @@ function ProjectDetails() {
             demo: null,
             date: "2024",
             role: "Bot Developer & Backend Engineer"
+        },
+        'solid-snake': {
+            title: "Solid Snake - DQN AI Training Testbed",
+            tagline: "Neural network training experiments with parallel environments and GPU acceleration",
+            description: "A Deep Q-Network reinforcement learning project that trains 250 snake agents simultaneously to validate AI training techniques for larger projects. Features GPU acceleration via DirectML for AMD hardware, real-time web dashboard monitoring, and optimized network architecture. This serves as a personal testing ground for neural network optimization strategies, parallel training systems, and hybrid CPU/GPU pipelines before scaling to enterprise-level AI applications.",
+            technologies: ["Python", "PyTorch", "DirectML", "Pygame", "Flask", "SocketIO", "NumPy"],
+            features: [
+                "Parallel training across 250 snake environments simultaneously",
+                "GPU acceleration with AMD DirectML support (also CUDA/CPU compatible)",
+                "Real-time web dashboard with Flask + SocketIO for monitoring",
+                "Optimized compact network: 128-neuron architecture (~17,600 parameters)",
+                "Experience replay buffer with 100,000 transitions",
+                "Target network updated every 10 episodes for stability",
+                "Distance-based reward shaping for improved learning",
+                "Auto-save checkpointing with resume capability",
+                "Sparse rendering optimization (updates every 500 steps)",
+                "Wall-wrapping mechanics instead of death on collision"
+            ],
+            challenges: [
+                {
+                    title: "GPU Acceleration on AMD Windows",
+                    description: "PyTorch doesn't natively support AMD GPUs on Windows. Implemented DirectML integration to leverage DirectX 12 for AMD Radeon RX 6900XT acceleration, achieving 2-3x speedup in neural network operations while CPU handles game logic."
+                },
+                {
+                    title: "Network Architecture Optimization",
+                    description: "Reduced network from 256 to 128 neurons per layer (50% parameter reduction) without sacrificing performance. Smaller network proved sufficient for the 11-dimensional state space, resulting in faster training and better generalization."
+                },
+                {
+                    title: "Balancing Performance and Monitoring",
+                    description: "Implemented smart rendering strategy: display updates every 500 steps instead of every frame, web dashboard batch updates, and no FPS cap. This balanced training speed with adequate visual feedback for debugging."
+                }
+            ],
+            github: "https://github.com/f87shujin/Solid-snake",
+            demo: null,
+            date: "2024-2025",
+            role: "AI/ML Engineer & Full-Stack Developer"
+        },
+        'elixir-fountain': {
+            title: "Elixir Fountain - E-commerce Platform",
+            tagline: "Full-stack online store with modern React frontend and Flask REST API",
+            description: "A complete e-commerce solution featuring product management, user authentication, shopping cart functionality, and order processing. Built with React and Vite for a fast, responsive frontend, and Flask with MongoDB for a scalable backend. Includes admin dashboard for product and user management, wishlist functionality, and secure session-based authentication.",
+            technologies: ["React", "Flask", "MongoDB", "Python", "Vite", "Axios", "Flask-CORS"],
+            features: [
+                "Dynamic product catalog with category filtering and search",
+                "User authentication and authorization system with session management",
+                "Shopping cart with real-time updates and quantity management",
+                "Wishlist functionality for saving favorite products",
+                "Secure checkout process with shipping and payment information",
+                "Admin dashboard for managing products, users, and orders",
+                "Product management with image uploads and featured items",
+                "Order history and tracking for customers",
+                "Responsive design optimized for all devices",
+                "RESTful API with CORS support for frontend-backend communication"
+            ],
+            challenges: [
+                {
+                    title: "State Management Across Components",
+                    description: "Implemented React Context API for global state management of cart, wishlist, and authentication. Created custom hooks (useCart, useAuth) to provide clean, reusable access to shared state throughout the application."
+                },
+                {
+                    title: "Session-Based Authentication",
+                    description: "Built secure session management with Flask-Session and HTTP-only cookies. Implemented protected routes on both frontend (React Router) and backend (decorators) to ensure proper access control for user and admin functionality."
+                },
+                {
+                    title: "Real-Time Cart Synchronization",
+                    description: "Developed dual-mode cart system: localStorage for guest users and MongoDB backend for authenticated users. Seamlessly migrates cart data on login and keeps frontend/backend synchronized with optimistic UI updates."
+                }
+            ],
+            github: "https://github.com/Madeinbasement/Ecomerce-pro",
+            demo: null,
+            date: "2025",
+            role: "Full-Stack Developer"
         }
     };
 
