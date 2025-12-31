@@ -122,6 +122,18 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
+.data-button {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    color: #fff;
+    border: 2px solid #1565C0;
+}
+
+.data-button:hover {
+    background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+}
+
 .project-section {
     max-width: 1200px;
     margin: 0 auto 40px;

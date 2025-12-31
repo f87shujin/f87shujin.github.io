@@ -122,7 +122,7 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/f87shujin/AI-Desert",
-            demo: null,
+            demo: "http://172.93.26.243/recipes/",
             date: "2024",
             role: "AI/ML Developer & Full-Stack Developer"
         },
@@ -228,9 +228,46 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/Madeinbasement/Ecomerce-pro",
-            demo: null,
+            demo: "http://172.93.26.243",
             date: "2025",
             role: "Full-Stack Developer"
+        },
+        'business-assistant': {
+            title: "Business Assistant - AI-Powered Business Intelligence",
+            tagline: "Smart business analysis and decision-making platform powered by AI",
+            description: "An intelligent business assistant that leverages artificial intelligence to provide comprehensive market analysis, competitor insights, and data-driven recommendations. This platform helps businesses make informed decisions through automated research, trend analysis, and strategic planning tools, streamlining the business intelligence process with AI-powered automation.",
+            technologies: ["Python", "Flask", "AI/ML", "Natural Language Processing", "Data Analysis", "REST API"],
+            features: [
+                "AI-powered market research and competitor analysis",
+                "Automated business intelligence gathering and reporting",
+                "Data-driven insights and strategic recommendations",
+                "Natural language query interface for business questions",
+                "Trend analysis and market forecasting",
+                "Competitive landscape visualization and comparison",
+                "Custom report generation with actionable insights",
+                "Real-time data processing and analysis",
+                "Interactive dashboard for business metrics",
+                "Export functionality for reports and analytics"
+            ],
+            challenges: [
+                {
+                    title: "AI Model Integration for Business Context",
+                    description: "Developed specialized AI models trained on business data to provide contextually relevant insights. Implemented natural language processing to understand complex business queries and generate accurate, actionable recommendations."
+                },
+                {
+                    title: "Data Aggregation and Analysis",
+                    description: "Built robust data pipeline to collect, process, and analyze information from multiple sources. Designed efficient algorithms for real-time market analysis and competitor tracking while ensuring data accuracy and relevance."
+                },
+                {
+                    title: "Scalable Architecture Design",
+                    description: "Engineered a scalable Flask backend with optimized API endpoints to handle concurrent analysis requests. Implemented caching strategies and asynchronous processing for improved performance and user experience."
+                }
+            ],
+            github: "https://github.com/f87shujin/Busniss_Assist",
+            demo: "http://172.93.26.243/analysis/",
+            sampleData: "/business_sales_large.csv",
+            date: "2024-2025",
+            role: "AI/ML Engineer & Full-Stack Developer"
         }
     };
 
@@ -266,6 +303,11 @@ function ProjectDetails() {
                         {project.demo && (
                             <a href={project.demo} target="_blank" rel="noopener noreferrer" className="link-button demo-button">
                                 🚀 Live Demo
+                            </a>
+                        )}
+                        {project.sampleData && (
+                            <a href={project.sampleData} download className="link-button data-button">
+                                📊 Sample Data (CSV)
                             </a>
                         )}
                     </div>
