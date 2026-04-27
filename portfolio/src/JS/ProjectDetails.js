@@ -54,7 +54,7 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/f87shujin/eLibrary",
-            demo: null,
+            demo: "https://7madi.duckdns.org/library/",
             date: "2024",
             role: "Full-Stack Developer"
         },
@@ -122,7 +122,7 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/f87shujin/AI-Desert",
-            demo: "http://172.93.26.243/recipes/",
+            demo: "https://7madi.duckdns.org/recipes/",
             date: "2024",
             role: "AI/ML Developer & Full-Stack Developer"
         },
@@ -228,7 +228,7 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/Madeinbasement/Ecomerce-pro",
-            demo: "http://172.93.26.243",
+            demo: "https://7madi.duckdns.org/",
             date: "2025",
             role: "Full-Stack Developer"
         },
@@ -264,7 +264,7 @@ function ProjectDetails() {
                 }
             ],
             github: "https://github.com/f87shujin/Busniss_Assist",
-            demo: "http://172.93.26.243/analysis/",
+            demo: "https://7madi.duckdns.org/analysis/",
             sampleData: "/business_sales_large.csv",
             date: "2024-2025",
             role: "AI/ML Engineer & Full-Stack Developer"

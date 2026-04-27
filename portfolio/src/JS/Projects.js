@@ -12,7 +12,7 @@ function Projects() {
             image: "https://www.marykay.ca/-/media/images/mk/united-states/canada/esuite/product-shop-landing/shop/category-fragrance-hero-2.png?h=521&w=1418&la=en-CA&hash=78AF8FFDAE893DAD7E80979F5B62AC2A9ECC1EE7",
             link: "https://github.com/Madeinbasement/Ecomerce-pro",
             detailsLink: "/project/elixir-fountain",
-            demo: "http://172.93.26.243",
+            demo: "https://7madi.duckdns.org/",
             tech: ["React", "Flask", "MongoDB", "Python"]
         },
         {
@@ -22,7 +22,7 @@ function Projects() {
             image: "https://indatalabs.com/wp-content/uploads/2024/01/ai-app.webp",
             link: "https://github.com/f87shujin/AI-Desert",
             detailsLink: "/project/intelligent-recipes",
-            demo: "http://172.93.26.243/recipes/",
+            demo: "https://7madi.duckdns.org/recipes/",
             tech: ["Python", "YOLOv8", "AI/ML", "Flask"]
         },
         {
@@ -32,7 +32,7 @@ function Projects() {
             image: "https://emerj.com/wp-content/uploads/2018/11/AI-business.jpg",
             link: "https://github.com/f87shujin/Busniss_Assist",
             detailsLink: "/project/business-assistant",
-            demo: "http://172.93.26.243/analysis/",
+            demo: "https://7madi.duckdns.org/analysis/",
             tech: ["Python", "AI/ML", "Flask", "Data Analysis"]
         },
         {
@@ -51,6 +51,7 @@ function Projects() {
             image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800",
             link: "https://github.com/f87shujin/eLibrary",
             detailsLink: "/project/elibrary",
+            demo: "https://7madi.duckdns.org/library/",
             tech: ["PHP", "JavaScript", "HTML", "CSS"]
         },
         {
